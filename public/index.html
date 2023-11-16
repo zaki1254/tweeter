@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Information -->
+    <!-- Meta Information --> 
     <title>Tweeter - Home Page</title>
 
     <!-- External CSS -->
@@ -29,6 +29,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet">
 
 
+    <!-- COUNTER-->
+    <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
+    <script type="text/javascript" src="./scripts/composer.js"></script>
   </head>
 
   <body>
@@ -50,7 +53,30 @@
   </header>
     </nav>
 
+    
+
     <!-- Page-specific (main) content here -->
     <main class="container"></main>
+    
+      <!-- Form container for creating a new tweet -->
+      <section id="new-tweet-form" class="new-tweet">
+          <!-- Error message for new tweets -->
+          <section id="new-tweet-error">
+              <div class="error-container flex-container-row">
+                  <i class="text-red fas fa-exclamation-circle"></i>
+                  <p id="new-tweet-err-msg" class="text-red"></p>
+              </div>
+          </section>
+          <!-- Create new tweet form -->
+          <form method="POST" action="/tweets/">
+              <label class="tweet-post-label" for="tweet-text">What are you humming about?</label>
+              <textarea name="text" id="tweet-text"></textarea>
+              <div class="tweet-btn-ctr bungee">
+                  <button class="tweet-btn" type="submit">Tweet</button>
+                  <output name="counter" class="counter" for="tweet-text">140</output>
+              </div>
+          </form>
+      </section>
+      <section id="tweets-container"> </section>
   </body>
 </html>
