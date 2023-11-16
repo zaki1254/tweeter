@@ -1,0 +1,23 @@
+.page-header {
+  align-items: center;
+  background-color: rgb(255 188 0);
+  background-image: url("../images/bedge-grunge.png");
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding-top: 150px;
+  width: 100%;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    float: left;
+    margin: 200px 40px 0 40px;
+    padding: 25px;
+    width: 50%;
+  }
+}

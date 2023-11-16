@@ -19,11 +19,24 @@ body {
   background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;  /* Apply Font */ 
+  display: flex;
+  flex-direction: column;
 }
  
 
 nav .logo {
   font-family: 'Bungee', sans-serif;
+}
+
+main {
+  width: 90%; /* 90%  */
+  margin: 0 auto; 
+  background-color: #f4f1ec; 
+  padding: 20px;
+}
+
+#tweet-text {
+  width: 100%;
 }
 
 /*
