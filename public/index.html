@@ -6,16 +6,24 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
-
+    <link rel="stylesheet" href="/styles/tweet-feed.css" type="text/css">
     <!-- App CSS -->
     <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
     <!-- Nav CSS -->
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <!--HEADER CSS -->
     <link rel="stylesheet" href="/styles/header.css" type="text/css"/>
-    <!-- FONT AWESOME -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" >
- 
+    <!-- Font Awesome Lib CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+          integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- NEW TWEET-->
+    <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css"/>
+    <!-- Timeago.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+            integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -31,32 +39,29 @@
 
     <!-- COUNTER-->
     <script type="text/javascript" src="./scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="./scripts/composer.js"></script>
+    <script type="text/javascript" src="./scripts/client.js"></script>
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <div class="logo">
-      <span>TWEETER</span>
-    </div>
-    <span class="write-new-tweet"> <strong>Write</strong> a new tweet</span>
-    <i class="fa-solid fa-angles-down"></i>
-    <header>
-      <div>
-          <img src="/images/profile-hex.png"> 
+      <div class="left">
+          <span>TWEETER</span>
       </div>
-      <br>
-      <div>
-          <h2>Zacharia Ibrahim </h2>
+      <div class="right">
+          <p>Write a new tweet</p>
+          <i class="fas fa-angle-double-down"></i>
       </div>
+  </nav>
+  
+  <header class="page-header">
+      <img src="/images/profile-hex.png" alt="Your Profile Image"/>
+      <h2>Zacharia Ibrahim</h2>
   </header>
-    </nav>
-
-    
+  
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container"> 
     
       <!-- Form container for creating a new tweet -->
       <section id="new-tweet-form" class="new-tweet">
@@ -78,5 +83,6 @@
           </form>
       </section>
       <section id="tweets-container"> </section>
+      </main>
   </body>
 </html>
