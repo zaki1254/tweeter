@@ -1,23 +1,55 @@
-.page-header {
-  align-items: center;
-  background-color: #0010f7;
-background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: flex-end;
-  padding-top: 150px;
-  width: 100%;
+@media only screen and (min-width: 1024px) {
+  .header-main {
+    display: flex;
+    height: 520px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 175px 0 0 40px;
+  }
+
+  .main-header {
+    background-color: #0b4ad4;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background-color: #004af7;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+  }
+
+  h2 {
+    margin: -12px 0 0 0;
+  }
 }
 
-/* Media Queries */
+/*tablet*/
 
-@media screen and (min-width: 768px) {
-  .page-header {
-    float: left;
-    margin: 200px 40px 0 40px;
-    padding: 25px;
-    width: 50%;
+@media only screen and (max-width: 1023px) {
+  .main-header {
+    background-color: #004af7;
+    height: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    background-image: url("https://www.transparenttextures.com/patterns/60-lines.png");
+    margin: 0;
+  }
+
+  .header-main {
+    height: 520px;
+    width: 100%;
+    padding: 0;
+  }
+
+  .container {
+    margin: auto;
+    width: 100%;
   }
 }

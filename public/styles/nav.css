@@ -17,6 +17,7 @@ nav {
 
 
 .right {
+  font-size:large ;
   font-family: 'Bungee', sans-serif;
   display: flex;
   flex-direction: column;
